@@ -1,0 +1,57 @@
+[debug] [2024-01-20T10:16:28.417Z] ----------------------------------------------------------------------
+[debug] [2024-01-20T10:16:28.421Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ACER\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting:github
+[debug] [2024-01-20T10:16:28.422Z] CLI Version:   13.0.1
+[debug] [2024-01-20T10:16:28.422Z] Platform:      win32
+[debug] [2024-01-20T10:16:28.423Z] Node Version:  v20.10.0
+[debug] [2024-01-20T10:16:28.423Z] Time:          Sat Jan 20 2024 15:46:28 GMT+0530 (India Standard Time)
+[debug] [2024-01-20T10:16:28.423Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-20T10:16:28.540Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-20T10:16:28.541Z] > authorizing via signed-in user (garsedivya@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\ACER\linkedin-clone-app1
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-01-20T10:16:30.893Z] Using project from CLI flag: linkedin-clone1-dcf85
+[debug] [2024-01-20T10:16:30.897Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/linkedin-clone1-dcf85 [none]
+[debug] [2024-01-20T10:16:31.686Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/linkedin-clone1-dcf85 200
+[debug] [2024-01-20T10:16:31.687Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/linkedin-clone1-dcf85 {"projectId":"linkedin-clone1-dcf85","projectNumber":"297931946162","displayName":"Linkedin-clone1","name":"projects/linkedin-clone1-dcf85","resources":{"hostingSite":"linkedin-clone1-dcf85","storageBucket":"linkedin-clone1-dcf85.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_7d4ad0a8-e6e5-4050-9838-dda1f54d16a6"}
+[info] i  Using project linkedin-clone1-dcf85 (Linkedin-clone1) 
+[info] 
+=== Hosting:github Setup
+[info] 
+[info] i  Detected a .git folder at C:\Users\ACER 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=356945985&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-01-20T10:16:32.400Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2024-01-20T10:16:32.400Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2024-01-20T10:16:32.858Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2024-01-20T10:16:32.858Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2024-01-20T10:16:32.868Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2024-01-20T10:16:33.359Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2024-01-20T10:16:33.359Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"Divyagarse","id":106800347,"node_id":"U_kgDOBl2k2w","avatar_url":"https://avatars.githubusercontent.com/u/106800347?v=4","gravatar_id":"","url":"https://api.github.com/users/Divyagarse","html_url":"https://github.com/Divyagarse","followers_url":"https://api.github.com/users/Divyagarse/followers","following_url":"https://api.github.com/users/Divyagarse/following{/other_user}","gists_url":"https://api.github.com/users/Divyagarse/gists{/gist_id}","starred_url":"https://api.github.com/users/Divyagarse/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Divyagarse/subscriptions","organizations_url":"https://api.github.com/users/Divyagarse/orgs","repos_url":"https://api.github.com/users/Divyagarse/repos","events_url":"https://api.github.com/users/Divyagarse/events{/privacy}","received_events_url":"https://api.github.com/users/Divyagarse/received_events","type":"User","site_admin":false,"name":"Divya Garse","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":2,"public_gists":0,"followers":0,"following":1,"created_at":"2022-06-03T06:34:18Z","updated_at":"2024-01-20T09:24:28Z","private_gists":0,"total_private_repos":1,"owned_private_repos":1,"disk_usage":177,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as Divyagarse 
+[info] 
